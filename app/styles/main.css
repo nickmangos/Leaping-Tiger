@@ -9,26 +9,6 @@
 
 /*Grid System*/
 
-.container {
-    margin: 0 auto;
-    width: 90%;
-}
-
-.column {
-    float: left;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-
-.column.full { width: 100%; }
-.column.half { 
-	width: 50%;
-	min-width: 278px;
-	}
-.column.third { width: 33.3%; }
-
-
 html {
     height: 100%;
     background-color: #F6F6F6;
@@ -63,6 +43,11 @@ h2, h3 {
 	text-align: center;
 }
 
+header {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
 header h1 {
 	font-size: 38px;
 	padding: 0;
@@ -81,7 +66,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .nav {
-	padding: 3.2em;
+	padding: 30px;
 }
 
 .link--loud {
@@ -108,8 +93,17 @@ a:hover, a:visited, a:link, a:active
 .trending {
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
+	height: 246px;
+	max-width: 1000px;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: hidden;
+	white-space: nowrap;
 }
+
+.trending::-webkit-scrollbar { 
+    display: none;
+} 
 
 /*
 game
@@ -119,11 +113,14 @@ game__card
 
 .game {
 	height: 246px;
-	margin-right: 30px;
+	margin-left: 30px;
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
+}
 
+.game:last-child {
+ 	margin-right: 30px
 }
 
 .game__img{
@@ -135,20 +132,23 @@ game__card
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	background-color: white
+	background-color: white;
+	white-space: normal;
 }
 
 .game__card h3{
 	text-align: left;
 	margin: 4px 10px;
 	font-size: 16px;
-
 }
 
 
 
-
-
+.column {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -160,7 +160,18 @@ game__card
     clear: both;
 }
 
+@media all and (min-width: 440px) {
 
+.column {
+    float: left;
+    text-align: left;
+}
+
+.column.full { width: 100%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.flow-opposite { float: right; }
+}
 
 /*
 
