@@ -1,3 +1,48 @@
+/*override normalise*/
+ul {
+    padding: 0;
+}
+
+/*border box model*/
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Grid System*/
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.column.full { width: 100%; }
+.column.two-thirds { width: 66.7%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.fourth { width: 24.95%; }
+.column.flow-opposite { float: right; }
+
+
+html {
+    height: 100%;
+    background-color: #F6F6F6;
+}
+
+
+body {
+    height: 100%;
+}
+
+
 h1, a {
    color: #323232;
    font-family: Montserrat, Helvetica, sans-serif;
@@ -14,7 +59,7 @@ h2 {
 	font-weight: 200;
 }
 
-.splash {
+.hero {
 	max-width: 28em;
 	margin-left: auto;
 	margin-right: auto;
@@ -44,7 +89,7 @@ a:hover, a:visited, a:link, a:active
 	border-color: #feb157;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
-	border-radius: 50;
+	border-radius: 50px;
 }
 
 .nav .link--loud {
@@ -59,6 +104,12 @@ a:hover, a:visited, a:link, a:active
 	margin-left: 1em;
 }
 
-a:hover {
-	background-color: #fff;
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
 }
