@@ -1,0 +1,47 @@
+h1, a {
+   color: #323232;
+   font-size: 1.2em;
+   font-family: Montserrat;
+   font-weight: 200;
+}
+
+h2 {
+	font-family: Open Sans;
+}
+
+header h1 {
+	font-size: 2.4em;
+	text-align: center;
+
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    font-size: .8em;
+}
+
+.nav {
+	padding: 3.2em;
+}
+
+.link--loud {
+	padding: 0.7em 2.2em 0.8em;
+	border: 2px solid;
+	border-color: #feb157;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50;
+}
+
+.nav .link--loud {
+	padding: 0.4em 1.4em 0.5em;
+}
+
+.nav__links{
+	float: right;
+}
+
+.nav__links a {
+	margin-left: 1em;
+}
