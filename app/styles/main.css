@@ -148,30 +148,27 @@ game__card
 
 .info {
     max-width: 620px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .info h1, .info h2 {
-    width: 228px; 
+    width: 228px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .column {
-    height: 360px;
     position: relative;
 }
 
-.center-vert {
-    position: absolute;
-    top: 50%;
-
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
 .burst {
-    height: 240px;
+    height: 310px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .clearfix:before,
@@ -192,6 +189,7 @@ game__card
     }
 
     .column {
+        height: 360px;
         float: left;
         text-align: left;
     }
@@ -200,9 +198,25 @@ game__card
     .column.third { width: 33.3%; }
     .column.flow-opposite { float: right; }
 
-    .flow-opposite h1, .flow-opposite h2{ float: right; }
 
+    .center-vert {
+    position: absolute;
+    top: 50%;
+
+     -webkit-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+             transform: translateY(-50%);
     }
+    
+    .info h1, .info h2 {
+    text-align: left;
+    float: right;
+    }
+
+    .flow-opposite h1, .flow-opposite h2 { 
+        float: left; 
+    }
+}
 
 @media all and (min-width: 1040px) {
 
