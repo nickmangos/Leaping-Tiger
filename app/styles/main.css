@@ -54,7 +54,7 @@ header h1 {
 	font-size: 38px;
 	padding: 0;
 	margin: 0 0 12px 0;
-	margin-top: 6em;
+	margin-top: 1em;
 }
 
 header h2 {
@@ -70,7 +70,7 @@ a:hover, a:visited, a:link, a:active
 }
 
 .nav {
-	padding: 60px 30px;
+	padding: 20px 20px;
 }
 
 .link--loud {
@@ -153,14 +153,8 @@ game__card
 }
 
 .info h1, .info h2 {
-    width: 232px; 
+    width: 228px; 
 }
-
-.info__row {
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
 
 .column {
     height: 360px;
@@ -176,6 +170,9 @@ game__card
           transform: translateY(-50%);
 }
 
+.burst {
+    height: 240px;
+}
 
 .clearfix:before,
 .clearfix:after {
@@ -189,16 +186,36 @@ game__card
 
 @media all and (min-width: 600px) {
 
-.column {
-    float: left;
-    text-align: left;
+
+    .nav {
+        padding: 60px 30px;
+    }
+
+    .column {
+        float: left;
+        text-align: left;
+    }
+
+    .column.half { width: 50%; }
+    .column.third { width: 33.3%; }
+    .column.flow-opposite { float: right; }
+
+    .flow-opposite h1, .flow-opposite h2{ float: right; }
+
+    }
+
+@media all and (min-width: 1040px) {
+
+.trending {
+    max-width: 1000px;
+    overflow-x: hidden;
 }
 
-.column.full { width: 100%; }
-.column.half { width: 50%; }
-.column.third { width: 33.3%; }
-.column.flow-opposite { float: right; }
-}
+
+
+
+
+
 
 /*
 
