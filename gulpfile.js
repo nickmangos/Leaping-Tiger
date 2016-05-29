@@ -13,7 +13,9 @@ gulp.task('serve', function() {
     server: {
       baseDir: 'app'
     }
+
   });
 
   gulp.watch(['*.html', 'styles/**/*.css', 'scripts/**/*.js'], {cwd: 'app'}, reload);
 });
+
