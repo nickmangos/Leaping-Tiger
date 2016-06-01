@@ -16,6 +16,9 @@ body {
     */
 }
 
+.logo img {
+    height: 20px;
+}
 
 h1, a {
    color: #323232;
@@ -233,7 +236,8 @@ footer {
 
     .column.half { width: 50%; }
     .column.third { 
-        width: 33.3%
+        width: 33.3%;
+        background-color: red;
     }
     .column.flow-opposite { float: right; }
 
