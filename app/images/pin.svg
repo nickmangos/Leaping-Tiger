@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="31px" viewBox="0 0 23 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Game" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Copy-15" transform="translate(-716.000000, -185.000000)" fill="#FF8244">
+            <g id="Messaging-Copy-9">
+                <g id="Metaphor" transform="translate(518.000000, 165.000000)">
+                    <g id="Check-in" transform="translate(180.000000, 0.000000)">
+                        <g id="Pin" transform="translate(18.000000, 20.000000)">
+                            <path d="M11.4032803,0.164798541 C5.14067904,0.154585673 0.0545700006,5.24477159 0.043933475,11.5317199 C0.0342218648,17.8186681 11.3561096,30.5239393 11.3561096,30.5239393 C11.3561096,30.5239393 22.7182312,17.8548774 22.726093,11.5674649 C22.736267,5.28098084 17.6677314,0.175475629 11.4032803,0.164798541 L11.4032803,0.164798541 Z M11.3722956,19.1398418 C7.19907796,19.1324143 3.81758775,15.7278157 3.82591199,11.538219 C3.8323864,7.34583693 7.22405067,3.95284387 11.3977308,3.96073563 C15.575573,3.96677051 18.9542885,7.36951221 18.9473516,11.5618942 C18.9399523,15.7524194 15.549213,19.1468051 11.3722956,19.1398418 L11.3722956,19.1398418 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
