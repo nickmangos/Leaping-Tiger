@@ -141,9 +141,6 @@ a:hover, a:visited, a:link, a:active {
 	vertical-align: top;
 }
 
-.game:last-child {
- 	margin-right: 30px
-}
 
 .game__img{
 	width: 164px;
@@ -162,6 +159,15 @@ a:hover, a:visited, a:link, a:active {
 	text-align: left;
 	margin: 4px 10px;
 	font-size: 16px;
+}
+
+.game:hover .game__card {
+    height: 74px;
+    transition: 200ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 200ms;
+    -webkit-transition-timing-function: ease-in-out;
+
 }
 
 .info {
@@ -243,27 +249,83 @@ a:hover, a:visited, a:link, a:active {
 
 .mobile {
     margin-top: 40px;
+    text-align: center;
     }
 
 .mobile__image {
-    display: block;
-    max-width: 320px;
-    padding: 20px 30px 0 30px;
+    max-height: 240px;
+    padding: 20px 8px 0 8px;
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
+}
+
+.mobile__image:hover g {
+    fill: #FF5E00;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+    -webkit-transition: 300ms;
+    -webkit-transition-timing-function: ease-in-out;
 }
 
 footer {
     width: 100%;
     margin-top: 80px;
-    background-color: #EEEEEE;
+    background-color: #323232;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
-footer .container{
+footer ul {
+    color: #FFF;
+    list-style: none;
+    padding: 0;
+}
+
+footer a {
+    color: #FFF;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+footer a:hover {
+    color: #FF5E00;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.footer__container{
     max-width: 800px;
-    background-color: red;
     padding: 30px;
     margin: 0 auto 0 auto;
+}
+
+.footer__container > ul{
+    margin: 0;
+}
+
+.footer__logo img {
+    margin: 30px auto 20px auto;
+    display: block;
+}
+ 
+.footer__list {
+    float: left;
+    width: 50%;
+    padding-top: 40px;
+    color: #FF8244;
+}
+
+.footer__list li {
+    padding: 10px 0 0 0;
+    font-weight: 400;
+}
+
+.footer__pdf {
+    display: inline-block;
+    width: 40px;
+    padding: 8px 8px 8px 8px;
+    background-color: #484747;
+    color: #989898;
 }
 
 .clearfix:before,
@@ -290,9 +352,7 @@ footer .container{
     }
 
     .column.half { width: 50%; }
-    .column.third { 
-        width: 33.3%;
-    }
+    .column.third { width: 33.3%; }
     .column.flow-opposite { float: right; }
 
 
@@ -306,12 +366,26 @@ footer .container{
     }
     
     .info h1, .info h2 {
-    text-align: left;
-    float: right;
+        text-align: left;
+        float: right;
     }
 
     .flow-opposite h1, .flow-opposite h2 { 
         float: left; 
+    }
+
+    .footer__logo {
+        width: 20%;
+        float: left;
+    }
+
+    .footer__logo img {
+        margin: 0;
+    }
+
+    .footer__list {
+        width: 20%;
+        padding-top: 0;
     }
 }
 
