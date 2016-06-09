@@ -11,6 +11,16 @@ html {
     background-color: #F6F6F6;
 }
 
+body {
+    /*
+    background: url("../images/background.svg") repeat;
+    */
+}
+
+.logo img {
+    height: 20px;
+}
+
 h1, a {
    color: #323232;
    font-family: Montserrat, Helvetica, sans-serif;
@@ -55,18 +65,66 @@ h2, h3 {
 }
 
 .hero__convo {
-    visibility: hidden;
-    display: none;
+    padding: 0 30px 30px 30px
+   
 }
 
 .hero__convo p{
+    margin: 5px 0 5px 0;
     background-color: white;
-    font-size: 12px;
+    font-size: 14px;
+    padding: 12px 18px;
+    border-radius: 4px;
+    width: 64%;
 }
 
 .hero__text a {
     color: #fff;
     margin-top: 20px;
+}
+
+.hero__avatar {
+    height: 38px;
+}
+
+.hero__pin {
+    padding-top: 8px;
+
+}
+
+.checkin {
+    margin-top: 20px;
+}
+
+.player1 {
+    position: relative;
+}
+
+.player1 p {
+    margin-right: 48px;
+    float: right;
+}
+
+.player1 .hero__avatar {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.player2 {
+    position: relative;
+}
+
+.player2 p{
+    margin-left: 48px;
+    float: left;
+    background-color: #B8CDE0;
+}
+
+.player2 .hero__avatar {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -184,7 +242,7 @@ a:hover {
 }
 
 .burst {
-    height: 300px;
+    max-width: 300px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -267,20 +325,11 @@ footer {
     }
 
     .hero__convo {
-        margin-left: 30px;
-        margin-right: 30px;
         visibility: visible;
         display: block;
     }
 
-    .hero__convo p{
-        padding: 12px;
-        border-radius: 2px;
-    }
 
-    .hero__avatar {
-        height: 38px;
-    }
 }
 
 @media all and (min-width: 760px) {
@@ -296,7 +345,7 @@ footer {
     }
 
     .hero__convo {
-        margin: 0;
+        margin: 140px 0 0 0;
         padding-left: 15px;
         padding-right: 30px;
         width: 50%;
